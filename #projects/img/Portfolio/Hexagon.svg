@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="206" viewBox="0 0 180 206">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #323232;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Hexagon" class="cls-1" d="M410,489l90,51.5v103L410,695l-89.995-51.5v-103Z" transform="translate(-320 -489)"/>
+</svg>
