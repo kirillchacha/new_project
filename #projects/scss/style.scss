@@ -1,0 +1,73 @@
+
+@mixin fonts($font_name, $file_name, $weight, $style){
+	@font-face {
+		font-family: $font_name;
+		font-display: swap;
+		src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+		font-weight: #{$weight};
+		font-style: #{$style};
+	}
+}
+
+body {
+	margin: 0;
+	
+}
+
+.header {
+	width: 100%;
+	background: #323232;
+	position: fixed;
+	z-index: 3;
+	a{
+		color: white;
+	} 
+}
+
+.header-menu {
+	margin: 0;
+	margin-top: 16px;
+  display: flex;
+  justify-content: center;
+:hover {
+		color: #2eb398;
+	  }
+:focus {
+		color: #2eb398;
+	  }
+}
+
+
+.header-menu__list{
+	padding: 0;
+	display: flex;
+	list-style-type: none;
+}
+
+.header-menu__link {
+	margin: 0 26px;
+}
+
+.portfolio {
+	margin: 0 auto;
+	padding: 1%;
+	background: white;
+}
+
+.about-me {
+	background: #2eb398;
+}
+
+.get-in-touch {
+	background: #323232;
+}
+
+.form-button{
+	background: #2eb398;
+	border: none;
+}
+
+footer {
+	background: #222222;
+	color: #323232;
+}

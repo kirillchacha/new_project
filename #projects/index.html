@@ -4,9 +4,69 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<meta name="keywords" content="Портфолио, ,About me">
+	<meta name="description" content="Тестовый Сайт Портфолио">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Test</title>
 </head>
 <body>
-	
-</body>
+		@@include('_header.html')
+		<main class="main">
+			<section id="PORTFOLIO" class="portfolio">
+				<div id="gall">
+					<img src="img/Portfolio/1-Layer-33.jpg"/>
+					<img src="img/Portfolio/2-Layer-31.jpg"/>
+					<img src="img/Portfolio/3-Layer-34.jpg"/>
+					<img src="img/Portfolio/4-Layer-35.jpg"/>
+					<img src="img/Portfolio/5-Layer-36.jpg"/>
+					<img src="img/Portfolio/6-Layer-44.jpg"/>
+					<img src="img/Portfolio/7-Layer-37.jpg"/>
+					<img src="img/Portfolio/8-Layer-38.jpg"/>
+					<img src="img/Portfolio/9-Layer-39.jpg"/>
+					<img src="img/Portfolio/10-Layer-40.jpg"/>
+					<img src="img/Portfolio/11-Layer-41.jpg"/>
+					<img src="img/Portfolio/12-Layer-43.jpg"/>
+					<img src="img/Portfolio/13-Layer-42.jpg"/>
+				</div>
+			</section>
+			<section id="ABOUT" class="about-me">
+				<img src="img/about_me/Image.png"/>
+				<h1>Smith Anderson</h1>
+				<h4>Illustrator & Character Designer</h4>
+				<br>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna. Integer gravida, diam congue molestie fringilla, elit odio rhoncus turpis, ac dictum libero elit vel metus. Morbi egestas sit amet velit eget venenatis. Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna
+				</p>
+			</section>
+			<section id="GET IN TOUCH" class="get-in-touch">
+				<h1>Get In Touch</h1>
+				<p>In order to get in touch use the contact form below:</p>
+				<div class="forms-writing">
+				<form action="" method="get">
+					<p>
+						<label for="name"></label>
+						<input type="text" class="" name="name" id="name" placeholder="Name (Required)" required>
+					</p>
+					<p>
+					  <label for="email"></label>
+					  <input type="email" class="" name="email" id="email" placeholder="Email (Required)" required>
+					</p>
+					<p>
+						<label for="Subject"></label>
+						<input type="Subject" class="" name="Subject" id="Subject" placeholder="Subject" required>
+					</p>
+					<p>
+						<label for="msg"></label>
+						<input type="msg" class="" name="msg" id="msg" placeholder="Message: Write your message here..." required>
+					</p>
+					<button type="submit" class="form-button">SEND</button>
+				 </form>
+				 </div>
+			</section>
+		</main>
+		<footer>
+			<p>&copy; Copyright 2013 by PSDchat</p>
+		</footer class="footer">
+		<script src="js/script.min.js"></script>
+		</body>
 </html>
