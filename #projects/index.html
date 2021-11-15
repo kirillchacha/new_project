@@ -10,63 +10,77 @@
 	<title>Test</title>
 </head>
 <body>
+	<div class="wrapper">
 		@@include('_header.html')
-		<main class="main">
-			<section id="PORTFOLIO" class="portfolio">
-				<div id="gall">
-					<img src="img/Portfolio/1-Layer-33.jpg"/>
-					<img src="img/Portfolio/2-Layer-31.jpg"/>
-					<img src="img/Portfolio/3-Layer-34.jpg"/>
-					<img src="img/Portfolio/4-Layer-35.jpg"/>
-					<img src="img/Portfolio/5-Layer-36.jpg"/>
-					<img src="img/Portfolio/6-Layer-44.jpg"/>
-					<img src="img/Portfolio/7-Layer-37.jpg"/>
-					<img src="img/Portfolio/8-Layer-38.jpg"/>
-					<img src="img/Portfolio/9-Layer-39.jpg"/>
-					<img src="img/Portfolio/10-Layer-40.jpg"/>
-					<img src="img/Portfolio/11-Layer-41.jpg"/>
-					<img src="img/Portfolio/12-Layer-43.jpg"/>
-					<img src="img/Portfolio/13-Layer-42.jpg"/>
+		<div class="content">
+				<div class="container"><main class="main">
+					<section id="PORTFOLIO" class="portfolio">
+						<div id="gall" class="galery">
+							<a href="img/Portfolio/1-Layer-33.jpg"  class="ulightbox" target="_blank" title="Нажмите, для просмотра в полном размере..."><img src="img/Portfolio/1-Layer-33.jpg"/></a>
+							<a href="img/Portfolio/2-Layer-31.jpg" class="ulightbox" target="_blank" title="Нажмите, для просмотра в полном размере..."><img src="img/Portfolio/2-Layer-31.jpg"/></a>
+							<a href="img/Portfolio/3-Layer-34.jpg" class="ulightbox" target="_blank" title="Нажмите, для просмотра в полном размере..."><img src="img/Portfolio/3-Layer-34.jpg"/></a>
+							<a href="img/Portfolio/4-Layer-35.jpg" class="ulightbox" target="_blank" title="Нажмите, для просмотра в полном размере..."><img src="img/Portfolio/4-Layer-35.jpg"/></a>
+							<a href="img/Portfolio/5-Layer-36.jpg" class="ulightbox" target="_blank" title="Нажмите, для просмотра в полном размере..."><img src="img/Portfolio/5-Layer-36.jpg"/></a>
+							<a href="img/Portfolio/6-Layer-44.jpg" class="ulightbox" target="_blank" title="Нажмите, для просмотра в полном размере..."><img src="img/Portfolio/6-Layer-44.jpg"/></a>
+							<a href="img/Portfolio/7-Layer-37.jpg" class="ulightbox" target="_blank" title="Нажмите, для просмотра в полном размере..."><img src="img/Portfolio/7-Layer-37.jpg"/></a>
+							<a href="img/Portfolio/8-Layer-38.jpg" class="ulightbox" target="_blank" title="Нажмите, для просмотра в полном размере..."><img src="img/Portfolio/8-Layer-38.jpg"/></a>
+							<a href="img/Portfolio/9-Layer-39.jpg" class="ulightbox" target="_blank" title="Нажмите, для просмотра в полном размере..."><img src="img/Portfolio/9-Layer-39.jpg"/></a>
+							<a href="img/Portfolio/10-Layer-40.jpg" class="ulightbox" target="_blank" title="Нажмите, для просмотра в полном размере..."><img src="img/Portfolio/10-Layer-40.jpg"/></a>
+							<a href="img/Portfolio/11-Layer-41.jpg" class="ulightbox" target="_blank" title="Нажмите, для просмотра в полном размере..."><img src="img/Portfolio/11-Layer-41.jpg"/></a>
+							<a href="img/Portfolio/12-Layer-43.jpg" class="ulightbox" target="_blank" title="Нажмите, для просмотра в полном размере..."><img src="img/Portfolio/12-Layer-43.jpg"/></a>
+							<a href="img/Portfolio/13-Layer-42.jpg" class="ulightbox" target="_blank" title="Нажмите, для просмотра в полном размере..."><img src="img/Portfolio/13-Layer-42.jpg"/></a>
+						</div>
+					</section>
+					<section id="ABOUT" class="about-me">
+						<img src="img/about_me/Image.png"/>
+						<div class="about__text">
+						<h1>Smith Anderson</h1>
+						<h4>Illustrator & Character Designer</h4>
+						<br>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor, nibh at sagittis tristique, enim magna <br> pretium augue, eget consectetur sem dui non urna. Integer gravida, diam congue molestie fringilla, elit odio rhon-<br>cus turpis, ac dictum libero elit vel metus. Morbi egestas sit amet velit eget venenatis. Mauris porttitor, nibh at <br> sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna
+						</p>
+						</div>
+					</section>
+					<section id="GET IN TOUCH" class="get-in-touch">
+						<div class="get-in-touch__text">
+						<h1>Get In Touch</h1>
+						<p>In order to get in touch use the contact form below:</p>
+						<div class="forms-writing">
+						<form action="" method="get">
+							<p>
+								<label for="name"></label>
+								<input type="text" class="" name="name" id="name" placeholder="Name (Required)" required>
+							</p>
+							<p>
+							  <label for="email"></label>
+							  <input type="email" class="" name="email" id="email" placeholder="Email (Required)" required>
+							</p>
+							<p>
+								<label for="Subject"></label>
+								<input type="Subject" class="" name="Subject" id="Subject" placeholder="Subject" required>
+							</p>
+							<p>
+								<label for="msg"></label>
+								<input type="msg" class="" name="msg" id="msg" placeholder="Write your message here..." required>
+							</p>
+							<button type="submit" class="form-button">SEND</button>
+						 </form>
+						 </div>
+						 </div>
+						 <p>Quisque Hendrerit: purus dapi-<br>bus, ornare nibh vitae, viverra <br> nibh. Fusce vitae aliquam tellus. <br> Proin sit amet volutpat libero. <br> Nulla sed nunc et tortor luctus <br> faucibus morbi vitae. </p>
+					</section>
+				</main>
+			</div>
+	</div>
+</div>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__row">
+			<div class="footer__text">&copy; Copyright 2013 by PSDchat</div>
 				</div>
-			</section>
-			<section id="ABOUT" class="about-me">
-				<img src="img/about_me/Image.png"/>
-				<h1>Smith Anderson</h1>
-				<h4>Illustrator & Character Designer</h4>
-				<br>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna. Integer gravida, diam congue molestie fringilla, elit odio rhoncus turpis, ac dictum libero elit vel metus. Morbi egestas sit amet velit eget venenatis. Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna
-				</p>
-			</section>
-			<section id="GET IN TOUCH" class="get-in-touch">
-				<h1>Get In Touch</h1>
-				<p>In order to get in touch use the contact form below:</p>
-				<div class="forms-writing">
-				<form action="" method="get">
-					<p>
-						<label for="name"></label>
-						<input type="text" class="" name="name" id="name" placeholder="Name (Required)" required>
-					</p>
-					<p>
-					  <label for="email"></label>
-					  <input type="email" class="" name="email" id="email" placeholder="Email (Required)" required>
-					</p>
-					<p>
-						<label for="Subject"></label>
-						<input type="Subject" class="" name="Subject" id="Subject" placeholder="Subject" required>
-					</p>
-					<p>
-						<label for="msg"></label>
-						<input type="msg" class="" name="msg" id="msg" placeholder="Message: Write your message here..." required>
-					</p>
-					<button type="submit" class="form-button">SEND</button>
-				 </form>
-				 </div>
-			</section>
-		</main>
-		<footer>
-			<p>&copy; Copyright 2013 by PSDchat</p>
-		</footer class="footer">
+			</div>
+		</footer >
 		<script src="js/script.min.js"></script>
 		</body>
 </html>

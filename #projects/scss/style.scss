@@ -9,15 +9,38 @@
 	}
 }
 
+*{
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	margin: 0;
 	
 }
 
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+
+	display: flex;
+	flex-direction: column;
+}
+
+/*.container {
+	//max-width: 1180px;
+	//margin: 0px auto;
+}
+
+.content {
+	flex: 1 1 auto;
+}*/
+
 .header {
 	width: 100%;
 	background: #323232;
 	position: fixed;
+
 	z-index: 3;
 	a{
 		color: white;
@@ -25,11 +48,21 @@ body {
 }
 
 .header-menu {
+	position: relative;
 	margin: 0;
-	margin-top: 16px;
+	margin-top: 20px;
   display: flex;
   justify-content: center;
-:hover {
+
+}
+
+
+.header-menu__list{
+	padding: 0;
+	padding-top: 15px;
+	display: flex;
+	list-style-type: none;
+	:hover {
 		color: #2eb398;
 	  }
 :focus {
@@ -37,37 +70,109 @@ body {
 	  }
 }
 
-
-.header-menu__list{
-	padding: 0;
-	display: flex;
-	list-style-type: none;
-}
-
 .header-menu__link {
-	margin: 0 26px;
+	text-decoration: none;
+	margin: 0 25px;
+}
+.triangle {
+	width: 180px;
+	height: 40px;
+	overflow: hidden;
+	position: absolute;
+	top: 100% ;
+	//transform: translate(0,-50%);
+
+	img {
+		vertical-align: top;
+		margin: -49px 0 0;
+	}
 }
 
 .portfolio {
-	margin: 0 auto;
-	padding: 1%;
+
+	margin: 0;
+	padding: 0;
+	padding: 10%;
 	background: white;
 }
 
+#gall {
+	:hover {
+		img {
+			width:200px;
+			transition: 0.5s;
+		}
+	}
+}
+
+.galery {
+	margin: 10px 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	//width:300px; 
+	transition:width 0.5s ease;
+}
+
 .about-me {
+	justify-content: center;
+	padding: 50px;
 	background: #2eb398;
+	color: white;
+	display: flex;
+	text-decoration: none;
+}
+
+.about__text {
+	padding:10px 0px 0px 19px;
 }
 
 .get-in-touch {
 	background: #323232;
+	color: white;
+	padding: 50px;
+	display: flex;
+}
+
+/*.get-in-touch__text {
+
+}*/
+
+#name {
+	width: 300px;
+}
+
+#email {
+	width: 300px;
+}
+
+#Subject {
+	width: 300px;
+}
+
+#msg {
+	width: 300px;
+	height: 80px;
 }
 
 .form-button{
 	background: #2eb398;
 	border: none;
+	padding: 10px 20px;
+	margin-top: 15px;
+	margin-left: 69%;
 }
 
 footer {
 	background: #222222;
 	color: #323232;
+}
+
+.footer__row {
+	display: flex;
+	padding: 15px;
+}
+
+.footer__text{
+	font-size: 12px;
 }
