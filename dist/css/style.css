@@ -124,8 +124,7 @@ body {
 }
 
 .portfolio {
-  height: 720px;
-  margin: 0;
+  margin: 0 0 11px;
   margin-top: 16%;
   padding: 0;
   background: white;
@@ -144,9 +143,6 @@ body {
 }
 
 #gall {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-flex: 10px;
       -ms-flex: 10px 10px 33%;
           flex: 10px 10px 33%;
@@ -157,29 +153,37 @@ body {
           justify-content: center;
 }
 
-#gall :hover img {
-  width: 200px;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-}
-
 .galery {
   margin: 10px 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-transition: width 0.5s ease;
   -o-transition: width 0.5s ease;
   transition: width 0.5s ease;
-  -webkit-box-flex: 10px;
-      -ms-flex: 10px 10px 33%;
-          flex: 10px 10px 33%;
+}
+
+.galery .row {
+  text-align: center;
+  margin: 0 -10% -40px;
+  width: 120%;
+}
+
+.galery .row a {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 8px;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+          clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.galery .row a:hover {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .about-me {
