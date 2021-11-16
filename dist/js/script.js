@@ -1,4 +1,5 @@
-"use strict"
+
+/*"use strict"
 
 document.addEventListener ('DOMContentLoaded', function (){
 	const form = document.getElementById('form');
@@ -47,4 +48,4 @@ document.addEventListener ('DOMContentLoaded', function (){
 	function emailTest(input) {
 		return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
 	}
-});
+});*/

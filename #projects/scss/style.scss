@@ -1,11 +1,12 @@
 
-@mixin fonts($font_name, $file_name, $weight, $style){
+@mixin font($font_name, $file_name, $weight, $style) {
+
 	@font-face {
-		font-family: $font_name;
-		font-display: swap;
-		src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
-		font-weight: #{$weight};
-		font-style: #{$style};
+	font-family: $font_name;
+	font-display: swap;
+	src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+	font-weight: #{$weight};
+	font-style: #{$style};
 	}
 }
 
@@ -41,7 +42,6 @@ body {
 	width: 100%;
 	background: #323232;
 	position: fixed;
-	font-family: "Lato-Bold";
 	z-index: 3;
 	a{
 		color: white;
@@ -58,6 +58,7 @@ body {
 
 
 .header-menu__list{
+	font-family: 'Lato-Bold', sans-serif;
 	padding: 0;
 	padding-top: 15px;
 	display: flex;
@@ -104,6 +105,10 @@ body {
 }
 
 #gall {
+	display: flex;
+	flex: 10px 10px 33%;
+	flex-wrap: wrap;
+	justify-content: center;
 	:hover {
 		img {
 			width:200px;
@@ -118,6 +123,7 @@ body {
 	flex-wrap: wrap;
 	justify-content: center;
 	transition:width 0.5s ease;
+	flex: 10px 10px 33%;
 }
 
 .about-me {
@@ -134,17 +140,21 @@ body {
 	padding:0px 0px 20px 19px;
 	h1 {
 		font-size: 30px;
+		font-family: 'MavenPro', sans-serif;
 	}
 	p{
 		font-size: 18px;
+		font-family: 'MavenPro', sans-serif;
 		color: #20816d
 	}
 	.about__text___p {
+		font-family: 'Lato-Regular', sans-serif;
 		margin-top: 20px;
 		font-size: 12px;
 		color: #aae9dc;
 	}
 	.about__text__p {
+		font-family: 'Lato-Regular', sans-serif;
 		margin-top: 6px;
 		font-size: 12px;
 		color: #aae9dc;
@@ -240,10 +250,12 @@ body {
 		display: flex;
 	h1{
 		font-size: 30px;
+		font-family: 'MavenPro';
 	}
 	p {
 		color: #bebebe;
 		font-size: 18px;
+		font-family: 'MavenPro';
 	}
 	}
 }
@@ -252,21 +264,29 @@ body {
 	margin: 70px 0px 0px 20px ;
 	pre {
 color: #bebebe;
+font-family: 'Lato-Regular';
+font-size: 12px;
 	}
 	.get-in-touch__text__contacts {
 		color: #bebebe;
+		//font-size: 12px;
 	}
 	b{
 		color: white;
+		font-family: 'Lato-Black';
 	}
 }
 
 .get-in-touch__text__contacts {
 	margin-top: 30px;
+	//font-size: 12px;
+	//font-family: 'Lato-Bold';
 }
 
 .get-in-touch__text_p_contacts {
 	margin-top: 6px;
+	//font-size: 12px;
+	//font-family: 'Lato-Bold';
 	img {
 		margin-right: 15px;
 	}
